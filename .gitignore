@@ -1,0 +1,16 @@
+# Ignore All
+/*
+
+# Keep Stuff
+!BestScoreBoards
+!*.sln
+!README.md
+!LICENSE
+!.github
+!assets
+!.config
+
+# Remove Stuff
+BestScoreBoards/bin
+BestScoreBoards/obj
+**.user

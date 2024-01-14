@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <DependenciesDirectory>D:/LC_Assembilies/deps</DependenciesDirectory>
+        <PluginsDirectory>D:\SteamLibrary\steamapps\common\Lethal Company\BepInEx\plugins\</PluginsDirectory>
+    </PropertyGroup>
+
+    <Target Name="CopyFiles" AfterTargets="PostBuildEvent" DependsOnTargets="NetcodePatch">
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(PluginsDirectory)" />
+    </Target>
+</Project>
